@@ -1,5 +1,3 @@
-// data/eventData.ts
-
 export const eventData = {
     header: {
       title: 'RainFocus Summit',
