@@ -195,6 +195,7 @@
 
 .registrationSection {
   display: flex;
+  align-items: center;
   gap: $spacing-xs;
 }
 
@@ -207,7 +208,6 @@
   justify-content: center;
   color: white;
   font-size: $font-base;
-  margin-bottom: $spacing-md;
 
   svg {
     width: 100%;
@@ -218,7 +218,6 @@
 .cardTitle {
   font-size: $font-base;
   font-weight: 600;
-  margin-top: 5px;
 
   @media (max-width: $breakpoint-md) {
     font-size: $font-sm;
