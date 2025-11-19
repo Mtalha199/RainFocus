@@ -1,0 +1,29 @@
+@import '../variables.scss';
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  background: $background;
+}
+
+.mainContent {
+  margin-left: 60px;
+  padding: $spacing-4xl $spacing-3xl;
+  max-width: 1200px;
+  width: 100%;
+
+  @media (max-width: $breakpoint-lg) {
+    margin-left: 50px;
+    padding: $spacing-3xl $spacing-2xl;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    margin-left: 60px;
+    padding: $spacing-2xl $spacing-lg;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    margin-left: 40px;
+    padding: $spacing-lg $spacing-md;
+  }
+}

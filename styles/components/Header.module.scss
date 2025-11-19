@@ -1,0 +1,124 @@
+@import '../variables.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: $spacing-3xl;
+  gap: $spacing-lg;
+
+  @media (max-width: $breakpoint-md) {
+    flex-direction: column;
+    gap: $spacing-lg;
+    margin-bottom: $spacing-3xl;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    margin-bottom: $spacing-2xl;
+  }
+}
+
+.eventInfo {
+  display: flex;
+  gap: $spacing-2xl;
+  align-items: flex-start;
+
+  @media (max-width: $breakpoint-md) {
+    width: 100%;
+    gap: $spacing-lg;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    gap: $spacing-md;
+  }
+}
+
+.eventLogo {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: $font-2xl;
+  flex-shrink: 0;
+  overflow: hidden;
+
+  @media (max-width: $breakpoint-md) {
+    width: 90px;
+    height: 90px;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    width: 70px;
+    height: 70px;
+    font-size: $font-xl;
+  }
+}
+
+.eventDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  h1 {
+    font-size: $font-2xl;
+    margin-top: 7.4px;
+    margin-bottom: $spacing-sm;
+    color: $text-dark;
+    font-weight: 300;
+
+    @media (max-width: $breakpoint-md) {
+      font-size: $font-2xl;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+      font-size: $font-xl;
+      margin-bottom: $spacing-xs;
+    }
+  }
+
+  p {
+    font-size: $font-md;
+    @media (max-width: $breakpoint-sm) {
+      font-size: $font-sm;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.editBtn {
+  background: $primary;
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: $spacing-xs $spacing-md;
+  border-radius: $radius-md;
+  font-weight: 600;
+  font-size: $font-base;
+  white-space: nowrap;
+
+  &:hover {
+    background: $primary-dark;
+    box-shadow: 0 4px 16px rgba(124, 58, 237, 0.3);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  @media (max-width: $breakpoint-md) {
+    padding: $spacing-sm $spacing-lg;
+    font-size: $font-sm;
+    width: 100%;
+
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    padding: 6px $spacing-md;
+    font-size: $font-xs;
+    width: 100%;
+  }
+}

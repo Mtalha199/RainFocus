@@ -1,0 +1,302 @@
+@import '../variables.scss';
+
+.guide {
+  width: 100%;
+}
+
+.title {
+  font-size: $font-2xl;
+  font-weight: 500;
+  margin-bottom: $spacing-sm;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-xl;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    font-size: $font-lg;
+  }
+}
+
+.subtitle {
+  font-size: $font-md;
+  margin-bottom: $spacing-xl;
+  padding-bottom: $spacing-3xl;
+  border-bottom: 1px solid $border-color;
+
+  @media (max-width: $breakpoint-md) {
+    margin-bottom: $spacing-2xl;
+    padding-bottom: $spacing-md;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    font-size: $font-sm;
+    margin-bottom: $spacing-lg;
+    padding-bottom: $spacing-sm;
+  }
+}
+
+.moduleHeader {
+  display: flex;
+  align-items: center;
+  gap: $spacing-md;
+  margin-bottom: $spacing-2xl;
+
+  @media (max-width: $breakpoint-sm) {
+    margin-bottom: $spacing-lg;
+    margin-top: $spacing-lg;
+  }
+}
+
+.moduleIcon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: $breakpoint-sm) {
+    width: 32px;
+    height: 32px;
+    font-size: $font-md;
+  }
+}
+
+.moduleTitle {
+  font-size: $font-xl;
+  font-weight: 600;
+  color: $text-dark;
+
+  @media (max-width: $breakpoint-sm) {
+    font-size: $font-md;
+  }
+}
+
+.step {
+  margin-bottom: $spacing-xs;
+
+  @media (max-width: $breakpoint-md) {
+    margin-bottom: $spacing-3xl;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    margin-bottom: $spacing-2xl;
+  }
+}
+
+.stepTitle {
+  font-size: $font-base;
+  font-weight: 600;
+  margin-bottom: $spacing-lg;
+  color: $text-dark;
+
+  @media (max-width: $breakpoint-sm) {
+    font-size: $font-sm;
+    margin-bottom: $spacing-md;
+  }
+}
+
+.stepName {
+  font-weight: normal;
+  margin-bottom: $spacing-lg;
+  color: $text-dark;
+
+  @media (max-width: $breakpoint-sm) {
+    font-size: $font-sm;
+    margin-bottom: $spacing-md;
+  }
+}
+.settingsRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid $border-color;
+  border-radius: $radius-lg;
+  padding: $spacing-3xl;
+  gap: $spacing-2xl;
+  margin-bottom: $spacing-2xl;
+
+  @media (max-width: $breakpoint-lg) {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+  @media (max-width: $breakpoint-md) {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+  @media (max-width: $breakpoint-sm) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  h5 {
+    font-size: $font-base;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  p {
+    font-size: $font-sm;
+    color: $text-dark;
+    line-height: 100%;
+    margin: 0;
+  }
+}
+
+
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $spacing-lg;
+  margin-bottom: $spacing-lg;
+
+  @media (max-width: $breakpoint-lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: $breakpoint-md) {
+    grid-template-columns: 1fr;
+    gap: $spacing-md;
+    margin-bottom: $spacing-md;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    gap: $spacing-md;
+    margin-bottom: $spacing-md;
+  }
+}
+
+.card {
+  border: 1px solid $border-color;
+  border-radius: $radius-lg;
+  padding: $spacing-3xl;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $primary;
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.1);
+  }
+
+  @media (max-width: $breakpoint-md) {
+    padding: $spacing-lg;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    padding: $spacing-md;
+  }
+}
+.registrationSection{
+  display: flex;
+  gap: $spacing-xs;
+}
+.cardIcon {
+  width: 24px;
+  height: 24px;
+  border-radius: $radius-sm;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: $font-base;
+  margin-bottom: $spacing-md;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.cardTitle {
+  font-size: $font-base;
+  font-weight: 600;
+  margin: 0;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-sm;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    font-size: $font-sm;
+    margin-bottom: $spacing-xs;
+  }
+}
+
+.cardDesc {
+  font-size: $font-sm;
+  color: $text-dark;
+  line-height: 100%;
+  margin: 0;
+
+  @media (max-width: $breakpoint-sm) {
+    font-size: $font-xs;
+  }
+}
+
+.addWorkflow {
+  width:32%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $border-color;
+  border-radius: $radius-lg;
+  padding: $spacing-3xl;
+  cursor: pointer;
+  margin-bottom: $spacing-2xl;
+
+  &:hover {
+    border-color: $primary;
+    background: $hover-bg;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  @media (max-width: $breakpoint-md) {
+    padding: $spacing-3xl $spacing-lg;
+    width: 100%;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    padding: $spacing-2xl $spacing-md;
+    min-height: 140px;
+  width:100%;
+
+  }
+}
+
+.addIcon {
+  width: 40px;
+  height: 40px;
+  border: 3px solid $primary;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $primary;
+  font-size: $font-2xl;
+  margin-bottom: $spacing-md;
+  font-weight: 300;
+
+  @media (max-width: $breakpoint-sm) {
+    width: 32px;
+    height: 32px;
+    font-size: $font-xl;
+    margin-bottom: $spacing-sm;
+  }
+}
+
+.addText {
+  font-size: $font-base;
+  font-weight: 600;
+  color: $text-dark;
+
+  @media (max-width: $breakpoint-sm) {
+    font-size: $font-sm;
+  }
+}

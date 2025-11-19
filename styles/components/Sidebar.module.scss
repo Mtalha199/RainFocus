@@ -1,0 +1,71 @@
+@import '../variables.scss';
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 62px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $spacing-2xl;
+  border-right: 1px solid $border-color;
+  border-left: 1px solid $border-color;
+  margin-left: $spacing-xs;
+  z-index: 100;
+
+  @media (max-width: $breakpoint-lg) {
+    width: 50px;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    width: 45px;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    width: 40px;
+    padding: $spacing-lg 0;
+  }
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: $spacing-2xl;
+
+  @media (max-width: $breakpoint-sm) {
+    width: 32px;
+    height: 32px;
+    font-size: $font-md;
+    margin-bottom: $spacing-2xl;
+  }
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: $background-light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: $spacing-lg;
+  font-size: $font-lg;
+  color: $background;
+  font-weight: 500;
+
+  @media (max-width: $breakpoint-sm) {
+    width: 32px;
+    height: 32px;
+    font-size: $font-sm;
+    margin-bottom: $spacing-sm;
+  }
+}
+
+.bottom {
+  margin-top: auto;
+}
