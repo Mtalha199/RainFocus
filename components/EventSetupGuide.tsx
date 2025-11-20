@@ -78,9 +78,7 @@ const EventSetupGuide: React.FC = () => {
               </div>
 
               <div className={styles.addWorkflow}>
-                <div className={styles.moduleIcon}>
                   <Image src={AddWorkFlowIcon} alt='' />
-                </div>
                 <p className={styles.addText}>{step.addButtonText}</p>
               </div>
             </>
